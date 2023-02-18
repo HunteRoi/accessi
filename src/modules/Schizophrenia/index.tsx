@@ -1,38 +1,64 @@
 import CleanSound from './soundclean_schizo.mp3';
 import DiseaseSound from './sounds_schizo.mp3';
+import { HeadsetIcon, OnIcon, OffIcon } from './customIcons';
+import { Button } from 'antd';
+import { PauseCircleOutlined, PlayCircleOutlined  } from '@ant-design/icons';
+import { useRef, useState } from 'react';
 
-import { FloatButton } from 'antd';
-import { SoundOutlined  } from '@ant-design/icons';
-import { useState } from 'react';
+import './style.css';
 
 const Schizophrenia: React.FC = () => {
-    const cleanSound = new Audio(CleanSound);
-    const schizoSound = new Audio(DiseaseSound);
-    const [isPlaying, setPlaying] = useState(false);
+    const cleanSound = useRef(new Audio(CleanSound));
+    const schizoSound = useRef(new Audio(DiseaseSound));
 
-    const playSound = (sound: HTMLAudioElement) => {
-        console.log('Playing sound');
-        sound.play();
-        setPlaying(true);
+    const [isSchizoPlaying, setIsSchizoPlaying] = useState(false);
+
+    const handleSchizoSoundButton = () => {
+        if (isSchizoPlaying) {
+            schizoSound.current.pause();
+        } else{
+            schizoSound.current.play();
+        }
+        setIsSchizoPlaying(isPlaying => !isPlaying);
     }
 
-    const pauseSound = (sound: HTMLAudioElement) => {
-        console.log('Paused sound');
-        sound.pause();
-        setPlaying(false);
-        // sound.
+    const resetAudioTracks = () => {
+        cleanSound.current.currentTime = 0;
+        schizoSound.current.currentTime = 0;
+    }
+
+    const startExperience = () => {
+        cleanSound.current.play();
     }
 
     return <div>
-        <button onClick={()=>playSound(schizoSound)}>Play 2</button>
-        <button onClick={()=>pauseSound(schizoSound)}>Stop 2</button>
+        <div>
+            <Button
+                className='start-button'
+                type="default" 
+                icon={<HeadsetIcon />}
+                onClick={startExperience}
+            >
+                Start experience
+            </Button>
+        </div>
 
-        <FloatButton
-            shape="circle"
-            type={ isPlaying ? 'primary' : 'default' }
-            style={{ right: 24 }}
-            icon={<SoundOutlined />}
-        />
+       <div>
+        <Button 
+                className='switch-button'
+                type="default"
+                icon={ isSchizoPlaying ? <OffIcon /> : <OnIcon />}
+                onClick={handleSchizoSoundButton}
+            />
+       </div>
+
+        <div>
+            <Button
+                onClick={resetAudioTracks}
+            >
+                Réinitialiser piste audio
+            </Button>
+        </div>
     </div>
 }
 
