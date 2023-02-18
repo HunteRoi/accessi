@@ -9,61 +9,62 @@
 .parent > div {
   text-align: center;
   font-size: 30px;
+
 }
     
-.div1 { 
+.choisirExperience { 
     grid-area: 1 / 1 / 2 / 3; 
     background-color: #e5bb9e;    
 }
-.div2 { 
+.dyslexie { 
     grid-area: 1 / 3 / 2 / 4; 
     background-color: #614e44;
 
 }
-.div3 { 
+.pattern1 { 
     grid-area: 1 / 4 / 2 / 5; 
-    background-color: red;
+    background-color: #ad6d44;
 }
-.div4 { 
+.schizophrenie { 
     grid-area: 2 / 1 / 3 / 2; 
     background-color: #614e44;
 
 }
-.div5 { 
+.pattern2 { 
     grid-area: 2 / 2 / 3 / 3; 
-    background-color: red;
+    background-color: #ad6d44;
 }
-.div6 { 
+.daltonisme { 
     grid-area: 2 / 3 / 3 / 4; 
     background-color: #e5bb9e;
 
 }
-.div7 { 
+.surdité { 
     grid-area: 2 / 4 / 3 / 5; 
     background-color: #e08c57;
 
 }
-.div8 { 
+.suggestion { 
     grid-area: 2 / 5 / 3 / 6; 
     background-color: #614e44;
 
 }
-.div9 { 
+.tca { 
     grid-area: 3 / 1 / 4 / 2; 
     background-color: #ad6d44;
 
 }
-.div10 { 
+.dyscalculie { 
     grid-area: 3 / 2 / 4 / 3;
     background-color: #e5bb9e;
  
 }
-.div11 { 
+.malvoyance { 
     grid-area: 3 / 3 / 4 / 4; 
     background-color: #e08c57;
 
 }
-.div12 { 
+.dysorthographie { 
     grid-area: 3 / 4 / 4 / 5; 
     background-color: #ad6d44;
 

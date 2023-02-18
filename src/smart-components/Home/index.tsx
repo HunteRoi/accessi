@@ -6,6 +6,19 @@ import './style.css';
 import SicknessCard from '../SicknessCard';
 import Settings from '../Settings';
 
+import { ReactComponent as DaltonismeSvg } from '../../img/daltonisme.svg'
+import { ReactComponent as LogoSvg } from '../../img/logo.svg'
+import { ReactComponent as DyscalculieSvg } from '../../img/dyscalculie.svg'
+import { ReactComponent as DyslexieSvg } from '../../img/dyslexie.svg'
+import { ReactComponent as DysorthographieSvg } from '../../img/dysorthographie.svg'
+import { ReactComponent as MalvoyanceSvg } from '../../img/malvoyance.svg'
+import { ReactComponent as Pattern1Svg } from '../../img/pattern1.svg'
+import { ReactComponent as Pattern2Svg } from '../../img/pattern2.svg'
+import { ReactComponent as SchizophrenieSvg } from '../../img/schizophrenie.svg'
+import { ReactComponent as SuggestionSvg } from '../../img/suggestion.svg'
+import { ReactComponent as SurditeSvg } from '../../img/surdité.svg'
+import { ReactComponent as TCASvg } from '../../img/TCA.svg'
+
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -16,22 +29,18 @@ const Home: React.FC = () => {
 
     return <>
         <div className="parent">
-            <div className="div1">Choisir une expérience</div>
-            <div className="div2">
-                <SicknessCard name='Dyslexie' />
-            </div>
-            <div className="div3">Truc 1</div>
-            <div className="div4">Schizo</div>
-            <div className="div5">Truc 2</div>
-            <div className="div6">Daltonisme</div>
-            <div className="div7">Surdité</div>
-            <div className="div8">Suggestions</div>
-            <div className="div9">
-                <SicknessCard name='TCA' />
-            </div>
-            <div className="div10">Dyscalculie</div>
-            <div className="div11">Malvoyant</div>
-            <div className="div12">Dysorthographie </div>
+            <SicknessCard divClass='choisirExperience' name='Choisir une expérience' image={LogoSvg}/>
+            <SicknessCard divClass='dyslexie' name='Dyslexie' image={DyslexieSvg}/>
+            <SicknessCard divClass='pattern1' name='' image={Pattern1Svg}/>
+            <SicknessCard divClass='schizophrenie' name='Schizophrenie' image={SchizophrenieSvg}/>
+            <SicknessCard divClass='pattern2' name='' image={Pattern2Svg}/>
+            <SicknessCard divClass='daltonisme' name='Daltonisme' image={DaltonismeSvg}/>
+            <SicknessCard divClass='surdité' name='Surdité' image={SurditeSvg}/>
+            <SicknessCard divClass='suggestion' name='Suggestion' image={SuggestionSvg}/>
+            <SicknessCard divClass='tca' name='TCA' image={TCASvg}/>
+            <SicknessCard divClass='dyscalculie' name='Dyscalculie' image={DyscalculieSvg}/>
+            <SicknessCard divClass='malvoyance' name='Malvoyance' image={MalvoyanceSvg}/>
+            <SicknessCard divClass='dysorthographie' name='Dysorthographie' image={DysorthographieSvg}/>
         </div> 
         
 
