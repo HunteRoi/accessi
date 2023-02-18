@@ -15,6 +15,8 @@ import NotFound from '../../dumb-components/NotFound';
 type Step = {
     type: 'experience' | 'informations' | 'stories';
     title: string;
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     getContent: (arg: any) => React.ReactNode;
 };
 
