@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "msfukui.eof-mark",
+        "dbaeumer.vscode-eslint",
+        "nhoizey.gremlins",
+        "simonsiefke.svg-preview",
+        "jkiviluoto.tws",
+        "infeng.vscode-react-typescript",
+        "gamunu.vscode-yarn"
+    ]
+}
