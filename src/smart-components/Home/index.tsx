@@ -1,14 +1,16 @@
 import React from 'react';
-import Contact from '../Contact';
 import Settings from '../Settings';
-import Sickness from '../Sickness';
+import SicknessCard from '../SicknessCard';
 
 export default function Home() {
-    return <div>
+    return <>
         <p>Home works</p>
 
-        <Sickness />
+        <SicknessCard />
+        <SicknessCard />
+        <SicknessCard />
+        <SicknessCard />
+
         <Settings />
-        <Contact />
-    </div>;
+    </>;
 }
