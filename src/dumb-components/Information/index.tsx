@@ -5,8 +5,7 @@ type Props = {
     summary: string[]
 }
 const Information: React.FC <Props>  = ({description, summary}) => {
-    const summaryList = summary.map((s) => 
-    (<p>{s}</p>))
+    const summaryList = summary.map((s, index) => (<p key={index}>{s}</p>));
     
     return <>
         <p>{description}</p>

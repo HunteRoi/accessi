@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 
 import { useState } from 'react';
-import { StepProps, Steps,Button } from 'antd';
+import { StepProps, Steps } from 'antd';
 import {
     useParams
   } from 'react-router-dom'
@@ -10,6 +10,7 @@ import Experience from '../../dumb-components/Experience';
 import Information from '../../dumb-components/Information';
 import Stories from '../../dumb-components/Stories';
 import StepperDot from '../../dumb-components/StepperDot';
+import FeedbackModal from '../../dumb-components/FeedbackModal';
 import './style.css';
 import useExperience from '../../hooks/useExperience';
 import NotFound from '../../dumb-components/NotFound';
@@ -82,7 +83,7 @@ const Sickness: React.FC = () => {
                 current={current}
                 items={items}
                 onChange={onChange} />
-            <Button type="primary" shape="circle" icon={<MessageOutlined />} size="large" />
+            <FeedbackModal/>
         </div>
     );
 };
