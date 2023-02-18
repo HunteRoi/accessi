@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             open={isModalOpen}
             onOk={handleOk}
             footer={[
-                <Button type='primary' onClick={handleOk}>OK</Button>
+                <Button key='ok' type='primary' onClick={handleOk}>OK</Button>
             ]}
         >
             <Settings />

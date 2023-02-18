@@ -59,7 +59,6 @@ const Settings: React.FC = () => {
             </Form.Item>
         </div>
 
-
     </Form>;
 };
 
