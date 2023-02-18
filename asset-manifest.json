@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/inside-out/static/css/main.e421703d.css",
-    "main.js": "/inside-out/static/js/main.d78a9c44.js",
+    "main.css": "/inside-out/static/css/main.a0438ada.css",
+    "main.js": "/inside-out/static/js/main.0570fa2b.js",
     "static/js/787.8d1dd590.chunk.js": "/inside-out/static/js/787.8d1dd590.chunk.js",
     "static/media/TCA_hidden.png": "/inside-out/static/media/TCA_hidden.bb8d9caabd17542ac624.png",
     "static/media/TCA_revealed.png": "/inside-out/static/media/TCA_revealed.d97a2db801362406ed05.png",
     "static/media/sounds_schizo.mp3": "/inside-out/static/media/sounds_schizo.807f5d997f58c7085eee.mp3",
     "static/media/soundclean_schizo.mp3": "/inside-out/static/media/soundclean_schizo.c1d9221b92f061adc920.mp3",
+    "static/media/OpenDyslexicAlta-BoldItalic.otf": "/inside-out/static/media/OpenDyslexicAlta-BoldItalic.0e5bc9617c356a42cd01.otf",
+    "static/media/OpenDyslexicAlta-Italic.otf": "/inside-out/static/media/OpenDyslexicAlta-Italic.4ebe180f8ce85db1b4a3.otf",
+    "static/media/DIN-Regular.ttf": "/inside-out/static/media/DIN-Regular.93f8fccd22ac0821a21c.ttf",
+    "static/media/OpenDyslexicAlta-Regular.otf": "/inside-out/static/media/OpenDyslexicAlta-Regular.dcb2363dd178768141a8.otf",
+    "static/media/OpenDyslexicAlta-Bold.otf": "/inside-out/static/media/OpenDyslexicAlta-Bold.48a088add10b1adb8f13.otf",
     "static/media/headset.svg": "/inside-out/static/media/headset.45bd49d41d6b334548c4ac5178486bd6.svg",
     "static/media/off-icon.svg": "/inside-out/static/media/off-icon.e882317dfbf9004501e850f89701e38d.svg",
     "static/media/on-icon.svg": "/inside-out/static/media/on-icon.32f191a3412b15fac7ee73ef415811c3.svg",
     "index.html": "/inside-out/index.html",
-    "main.e421703d.css.map": "/inside-out/static/css/main.e421703d.css.map",
-    "main.d78a9c44.js.map": "/inside-out/static/js/main.d78a9c44.js.map",
+    "main.a0438ada.css.map": "/inside-out/static/css/main.a0438ada.css.map",
+    "main.0570fa2b.js.map": "/inside-out/static/js/main.0570fa2b.js.map",
     "787.8d1dd590.chunk.js.map": "/inside-out/static/js/787.8d1dd590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e421703d.css",
-    "static/js/main.d78a9c44.js"
+    "static/css/main.a0438ada.css",
+    "static/js/main.0570fa2b.js"
   ]
 }
