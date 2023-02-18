@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/inside-out/static/css/main.46015b85.css",
-    "main.js": "/inside-out/static/js/main.cb8d2838.js",
+    "main.css": "/inside-out/static/css/main.e421703d.css",
+    "main.js": "/inside-out/static/js/main.d78a9c44.js",
     "static/js/787.8d1dd590.chunk.js": "/inside-out/static/js/787.8d1dd590.chunk.js",
     "static/media/TCA_hidden.png": "/inside-out/static/media/TCA_hidden.bb8d9caabd17542ac624.png",
     "static/media/TCA_revealed.png": "/inside-out/static/media/TCA_revealed.d97a2db801362406ed05.png",
+    "static/media/sounds_schizo.mp3": "/inside-out/static/media/sounds_schizo.807f5d997f58c7085eee.mp3",
+    "static/media/soundclean_schizo.mp3": "/inside-out/static/media/soundclean_schizo.c1d9221b92f061adc920.mp3",
+    "static/media/headset.svg": "/inside-out/static/media/headset.45bd49d41d6b334548c4ac5178486bd6.svg",
+    "static/media/off-icon.svg": "/inside-out/static/media/off-icon.e882317dfbf9004501e850f89701e38d.svg",
+    "static/media/on-icon.svg": "/inside-out/static/media/on-icon.32f191a3412b15fac7ee73ef415811c3.svg",
     "index.html": "/inside-out/index.html",
-    "main.46015b85.css.map": "/inside-out/static/css/main.46015b85.css.map",
-    "main.cb8d2838.js.map": "/inside-out/static/js/main.cb8d2838.js.map",
+    "main.e421703d.css.map": "/inside-out/static/css/main.e421703d.css.map",
+    "main.d78a9c44.js.map": "/inside-out/static/js/main.d78a9c44.js.map",
     "787.8d1dd590.chunk.js.map": "/inside-out/static/js/787.8d1dd590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46015b85.css",
-    "static/js/main.cb8d2838.js"
+    "static/css/main.e421703d.css",
+    "static/js/main.d78a9c44.js"
   ]
 }
