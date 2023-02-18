@@ -1,0 +1,9 @@
+.ant-form-item-label {
+    min-width: 79px;
+}
+
+.font-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

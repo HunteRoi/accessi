@@ -1,15 +1,45 @@
+@font-face {
+  font-family: "DIN";
+  src: local("DIN"), url("fonts/DIN-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenDyslexicAlta-Bold";
+  src: local("OpenDyslexicAlta-Bold"), url("fonts/OpenDyslexicAlta-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenDyslexicAlta-BoldItalic";
+  src: local("OpenDyslexicAlta-BoldItalic"), url("fonts/OpenDyslexicAlta-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenDyslexicAlta-Italic";
+  src: local("OpenDyslexicAlta-Italic"), url("fonts/OpenDyslexicAlta-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenDyslexicAlta-Regular";
+  src: local("OpenDyslexicAlta-Regular"), url("fonts/OpenDyslexicAlta-Regular.otf") format("opentype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'DIN';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fee2a0;
   margin: 20px;
 }
 
+body * {
+  font-family: 'DIN';
+}
+
+body[data-font='dyslexic'] * {
+  font-family: 'OpenDyslexicAlta-Regular';
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
