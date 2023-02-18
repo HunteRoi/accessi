@@ -1,0 +1,11 @@
+.ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background: transparent !important;
+}
+
+.ant-steps-item-active > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #1677ff !important;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
