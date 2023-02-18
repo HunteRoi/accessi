@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 
 import { useState } from 'react';
-import { StepProps, Steps } from 'antd';
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom';
+import { StepProps, Steps, Button } from 'antd';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 
 import './style.css';
 import Experience from '../../dumb-components/Experience';
@@ -14,6 +15,7 @@ import useExperience from '../../hooks/useExperience';
 import NotFound from '../../dumb-components/NotFound';
 import FeedbackModal from '../FeedbackModal';
 import { InfoMetadata, Story } from '../../typings';
+
 
 type Step = {
     type: 'experience' | 'informations' | 'stories' | 'starter';
@@ -60,6 +62,7 @@ const Sickness: React.FC = () => {
 
     const { experienceComponent, informations, stories, disclaimer } = useExperience(name);
     const [current, setCurrent] = useState(0);
+    const navigate = useNavigate();
 
     const onChange = (value: number) => setCurrent(value);
     const goToNext = () => onChange(current + 1);
@@ -85,6 +88,7 @@ const Sickness: React.FC = () => {
 
     return (
         <div>
+
             { component }
             { name }
             <Steps
@@ -95,6 +99,12 @@ const Sickness: React.FC = () => {
                 onChange={onChange}
             />
             <FeedbackModal />
+            <Button 
+                type='primary' 
+                shape='circle' 
+                icon={<ArrowLeftOutlined />} 
+                onClick={() => navigate('/')}
+            />
         </div>
     );
 };
