@@ -1,21 +1,17 @@
 import { MessageOutlined } from '@ant-design/icons';
 import { Button, Modal, Input, Form, message } from 'antd';
 import { useState, ChangeEventHandler } from 'react';
+const { TextArea } = Input;
 
 const initialValue = { name: '', content: '' };
 
-const { TextArea } = Input;
 const FeedbackModal: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [messageApi, contextHolder] = message.useMessage();
     const [feedback, setFeedback] = useState(initialValue);
 
     const reset = () => setFeedback(initialValue);
-
-    const showModal = () => {
-      setIsModalOpen(true);
-    };
-  
+    const showModal = () => setIsModalOpen(true);
     const handleOk = () => {
       setIsModalOpen(false);
       reset();
@@ -24,7 +20,6 @@ const FeedbackModal: React.FC = () => {
         content: 'En attente d\'approbation',
       });
     };
-  
     const handleCancel = () => {
       setIsModalOpen(false);
       reset();

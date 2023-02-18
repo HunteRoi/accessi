@@ -1,19 +1,13 @@
 import Dyslexia from '../modules/dyslexia';
 import TCA from '../modules/TCA';
+import { InfoMetadata, Story } from '../typings';
 
 type ModuleData = {
     disclaimer: string,
     name: string,
     experienceComponent: React.ReactNode,
-    informations: {
-        description: string,
-        summary: string[]
-    };
-    stories: {
-        name:string
-        content:string,
-        type:string
-    }[];
+    informations: InfoMetadata;
+    stories: Story[];
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -29,35 +23,35 @@ export default function useExperience(disabilityName: string): ModuleData {
         stories: [
             {
                 name: 'Jérôme',
-                content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j’ai
+                content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j'ai
                     une petite faiblesse avec le vert clair que je confond parfois avec le gris clair.Aussi lors
                     que je passe les tests, je ne peux nullement voir, ou quasiment pas voir les chiffres ou
                     symboles se trouvant dans les cercles. Je ne vois que des ronds de différentes
-                    couleurs. Aussi je sais que je suis daltonien. Je ne sais pas s’il existe réellement
-                    plusieurs degrés de daltonisme, mais en tout les cas, je viens d’être recalé à une
+                    couleurs. Aussi je sais que je suis daltonien. Je ne sais pas s'il existe réellement
+                    plusieurs degrés de daltonisme, mais en tout les cas, je viens d'être recalé à une
                     embauche à cause de ça. (contrôleur SNCF).
-                    J’ai parfois l’impression d’être dingue. Car voir clairement toutes les couleurs et ne pas
-                    réussir c’est tests, je trouve cela très frustrants`,
+                    J'ai parfois l'impression d'être dingue. Car voir clairement toutes les couleurs et ne pas
+                    réussir c'est tests, je trouve cela très frustrants`,
                 type: disabilityName
             },
             {
                 name: 'Jérôme',
-                content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j’ai
+                content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j'ai
                     une petite faiblesse avec le vert clair que je confond parfois avec le gris clair.Aussi lors
                     que je passe les tests, je ne peux nullement voir, ou quasiment pas voir les chiffres ou
                     symboles se trouvant dans les cercles. Je ne vois que des ronds de différentes
-                    couleurs. Aussi je sais que je suis daltonien. Je ne sais pas s’il existe réellement
-                    plusieurs degrés de daltonisme, mais en tout les cas, je viens d’être recalé à une
+                    couleurs. Aussi je sais que je suis daltonien. Je ne sais pas s'il existe réellement
+                    plusieurs degrés de daltonisme, mais en tout les cas, je viens d'être recalé à une
                     embauche à cause de ça. (contrôleur SNCF).
-                    J’ai parfois l’impression d’être dingue. Car voir clairement toutes les couleurs et ne pas
-                    réussir c’est tests, je trouve cela très frustrants`,
+                    J'ai parfois l'impression d'être dingue. Car voir clairement toutes les couleurs et ne pas
+                    réussir c'est tests, je trouve cela très frustrants`,
                 type: disabilityName
             }
         ]
     };
 
     switch(disabilityName) {
-        case 'TCA':
+        case 'tca':
             component.experienceComponent = <TCA />;
             break;
         case 'dyslexia':

@@ -6,7 +6,7 @@ type Props = {
 
 const SicknessCard: React.FC<Props> = ({ name }) => {
     return <div>
-        <Link to={`/sickness/${name}`}>Sickness card</Link>
+        <Link to={`/sickness/${name.toLowerCase()}`}>{name}</Link>
     </div>;
 };
 
