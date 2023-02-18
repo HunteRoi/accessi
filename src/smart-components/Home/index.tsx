@@ -5,7 +5,7 @@ const Home: React.FC = () => {
     return <>
         <p>Home works</p>
 
-        <SicknessCard name='test' />
+        <SicknessCard name='TCA' />
         <SicknessCard name='test' />
         <SicknessCard name='test' />
         <SicknessCard name='test' />
