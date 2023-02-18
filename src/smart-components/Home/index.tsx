@@ -18,8 +18,8 @@ const Home: React.FC = () => {
 
     return <>
         <SicknessCard name='TCA' />
+        <SicknessCard name='Schizophrenia' />
         <SicknessCard name='Dyslexia' />
-
         <SettingOutlined onClick={showModal}/>
 
         <Modal title='Paramètres' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>

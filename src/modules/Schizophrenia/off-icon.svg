@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15mm" height="22mm" viewBox="0 0 86.14 126.78">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-width: 2.83px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        font-size: 19.84px;
+        fill: #1d1d1b;
+        font-family: DINCondensed-Bold, DIN Condensed;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <rect class="cls-1" x="1.42" y="1.42" width="83.31" height="123.95" rx="9.89"/>
+      <g>
+        <rect class="cls-1" x="26.99" y="60.61" width="33.86" height="30.99" transform="translate(0.3 -0.17) rotate(0.23)"/>
+        <path class="cls-2" d="M27.05,60.55,26.84,31.3l34.09.14,7.83,9.31-30.54-.2Z"/>
+        <path class="cls-2" d="M68.76,40.75l-8.4,20-34.17,0"/>
+        <line class="cls-2" x1="38.22" y1="40.55" x2="26.84" y2="31.3"/>
+      </g>
+      <text class="cls-3" transform="translate(34.79 24.41)">ON</text>
+      <text class="cls-3" transform="translate(31.5 111.97)">OFF</text>
+    </g>
+  </g>
+</svg>

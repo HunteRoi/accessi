@@ -1,3 +1,4 @@
+import Schizophrenia from '../modules/Schizophrenia';
 import Dyslexia from '../modules/dyslexia';
 import TCA from '../modules/TCA';
 import { InfoMetadata, Story } from '../typings';
@@ -56,6 +57,9 @@ export default function useExperience(disabilityName: string): ModuleData {
             break;
         case 'dyslexia':
             component.experienceComponent = <Dyslexia />;
+            break;
+        case 'schizophrenia':
+            component.experienceComponent = <Schizophrenia />
             break;
         default:
             throw new Error('Unknown experience');
