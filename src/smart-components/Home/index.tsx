@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import { Button, Modal } from 'antd';
 import { SettingOutlined } from '@ant-design/icons';
 
 import SicknessCard from '../SicknessCard';
 import Settings from '../Settings';
-import { Button, Modal } from 'antd';
 
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
