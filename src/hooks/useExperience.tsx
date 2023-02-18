@@ -1,3 +1,4 @@
+import Dyslexia from '../modules/dyslexia';
 import TCA from '../modules/TCA';
 
 type ModuleData = {
@@ -5,8 +6,6 @@ type ModuleData = {
     informations: string;
     stories: string;
 };
-
-const Exp: React.FC = () => (<p>Exp works</p>);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function useExperience(name: string): ModuleData {
@@ -18,7 +17,10 @@ export default function useExperience(name: string): ModuleData {
 
     switch(name) {
         case 'TCA':
-            component.experienceComponent = <TCA />
+            component.experienceComponent = <TCA />;
+            break;
+        case 'dyslexia':
+            component.experienceComponent = <Dyslexia />;
             break;
         default:
             throw new Error('Unknown experience');
