@@ -1,11 +1,10 @@
-import CleanSound from './soundclean_schizo.mp3';
-import DiseaseSound from './sounds_schizo.mp3';
-import { HeadsetIcon, OnIcon, OffIcon } from './customIcons';
-import { Button } from 'antd';
-import { PauseCircleOutlined, PlayCircleOutlined  } from '@ant-design/icons';
 import { useRef, useState } from 'react';
+import { Button } from 'antd';
 
 import './style.css';
+import { HeadsetIcon, OnIcon, OffIcon } from './customIcons';
+import CleanSound from './soundclean_schizo.mp3';
+import DiseaseSound from './sounds_schizo.mp3';
 
 const Schizophrenia: React.FC = () => {
     const cleanSound = useRef(new Audio(CleanSound));
