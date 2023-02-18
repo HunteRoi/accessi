@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="173.12" height="168.93" viewBox="0 0 173.12 168.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.83px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_3" data-name="Calque 3">
+      <g>
+        <g>
+          <g>
+            <path class="cls-1" d="M47,59.2,83.12,76.33l0,45.09L47.65,104.1Z"/>
+            <path class="cls-1" d="M119.31,107l-36.19,15V76.33l37.66-12.81Z"/>
+            <polyline class="cls-1" points="46.95 59.2 60.1 54.58 83.94 46.21 120.78 63.52"/>
+            <path class="cls-1" d="M60.11,54.58,95.45,72.12l.87,43.63"/>
+            <path class="cls-1" d="M72.6,50.19,108,67.73l1.19,43.08"/>
+            <path class="cls-1" d="M93.94,51.13,59.24,64.74l.08,45.2"/>
+            <path class="cls-1" d="M106.61,56.78,71.45,70.13l-.63,44.72"/>
+            <path class="cls-1" d="M47.46,74.72,83.58,91.26l36.54-13"/>
+            <path class="cls-1" d="M47.3,90.41,83,106.85,119.8,93.28"/>
+          </g>
+          <line class="cls-1" x1="120.91" y1="35.73" x2="49.06" y2="122.79"/>
+        </g>
+        <path class="cls-1" d="M1.42,1.42H140a31.7,31.7,0,0,1,31.7,31.7V167.51a0,0,0,0,1,0,0H51A49.54,49.54,0,0,1,1.42,118V1.42a0,0,0,0,1,0,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
