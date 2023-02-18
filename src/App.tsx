@@ -7,6 +7,7 @@ import Home from './smart-components/Home';
 import Contact from './smart-components/Contact';
 import Sickness from './smart-components/Sickness';
 import Layout from './dumb-components/Layout';
+import NotFound from './dumb-components/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         path: '/sickness',
         element: <Outlet />,
         children: [
-          { path: '', element: <>Bruh</>},
+          { path: '', element: <NotFound />},
           { path: ':name', element: <Sickness /> }
         ]
       }

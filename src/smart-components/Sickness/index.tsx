@@ -10,6 +10,7 @@ import Stories from '../../dumb-components/Stories';
 import StepperDot from '../../dumb-components/StepperDot';
 import './style.css';
 import useExperience from '../../hooks/useExperience';
+import NotFound from '../../dumb-components/NotFound';
 
 type Step = {
     type: 'experience' | 'informations' | 'stories';
@@ -40,7 +41,7 @@ const Sickness: React.FC = () => {
     const onChange = (value: number) => setCurrent(value);
 
     const { name } = useParams();
-    if (!name) return <>Bruh no name</>;
+    if (!name) return <NotFound />;
 
     const { experienceComponent, informations, stories } = useExperience(name);
 
