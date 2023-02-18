@@ -4,9 +4,13 @@ on:
   push:
     branches: [ "master" ]
 
+permissions:
+  contents: write
+  
 jobs:
   build:
-
+    concurrency: ci-${{ github.ref }}
+    
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,3 +26,7 @@ jobs:
         cache: 'yarn'
     - run: yarn install --frozen-lockfile
     - run: yarn build
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build # The folder the action should deploy.
