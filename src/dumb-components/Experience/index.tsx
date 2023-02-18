@@ -3,10 +3,10 @@ import { InfoCircleOutlined } from '@ant-design/icons';
 
 type Props = {
     component: React.ReactNode,
-    goToInformation: () => void
+    goToNextStep: () => void
 }
 
-const Experience: React.FC<Props> = ({ component, goToInformation }) => {
+const Experience: React.FC<Props> = ({ component, goToNextStep }) => {
     return <>
         <h1>Experience works</h1>
         <Button 
@@ -14,7 +14,7 @@ const Experience: React.FC<Props> = ({ component, goToInformation }) => {
         shape="circle" 
         icon={<InfoCircleOutlined />} 
         size="large"
-        onClick={()=>goToInformation()} />
+        onClick={goToNextStep} />
         {component}
     </>;
 }

@@ -2,7 +2,8 @@ import Dyslexia from '../modules/dyslexia';
 import TCA from '../modules/TCA';
 
 type ModuleData = {
-    name: string
+    disclaimer: string,
+    name: string,
     experienceComponent: React.ReactNode,
     informations: {
         description: string,
@@ -18,6 +19,7 @@ type ModuleData = {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function useExperience(disabilityName: string): ModuleData {
     const component = {
+        disclaimer:'Attention, les images qui vont suivre vont vous brûler la rétine!',
         name: disabilityName,
         experienceComponent: <></>,
         informations: {
@@ -26,7 +28,7 @@ export default function useExperience(disabilityName: string): ModuleData {
         },
         stories: [
             {
-                name: 'Jerome',
+                name: 'Jérôme',
                 content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j’ai
                     une petite faiblesse avec le vert clair que je confond parfois avec le gris clair.Aussi lors
                     que je passe les tests, je ne peux nullement voir, ou quasiment pas voir les chiffres ou
@@ -39,7 +41,7 @@ export default function useExperience(disabilityName: string): ModuleData {
                 type: disabilityName
             },
             {
-                name: 'Jerome',
+                name: 'Jérôme',
                 content: `Je vous écris car pour ma part, je distingue très nettement les couleurs. Toutefois, j’ai
                     une petite faiblesse avec le vert clair que je confond parfois avec le gris clair.Aussi lors
                     que je passe les tests, je ne peux nullement voir, ou quasiment pas voir les chiffres ou

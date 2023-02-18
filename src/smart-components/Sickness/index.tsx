@@ -9,15 +9,15 @@ import {
 import Experience from '../../dumb-components/Experience';
 import Information from '../../dumb-components/Information';
 import Stories from '../../dumb-components/Stories';
+import StarterExperience from '../../dumb-components/StarterExperience';
 import StepperDot from '../../dumb-components/StepperDot';
-import FeedbackModal from '../../dumb-components/FeedbackModal';
+import FeedbackModal from '../FeedbackModal';
 import './style.css';
 import useExperience from '../../hooks/useExperience';
 import NotFound from '../../dumb-components/NotFound';
-import { MessageOutlined } from '@ant-design/icons';
 
 type Step = {
-    type: 'experience' | 'informations' | 'stories';
+    type: 'experience' | 'informations' | 'stories' | 'starter';
     title: string;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -26,10 +26,17 @@ type Step = {
 
 const steps: Step[] = [
     {
+        type: 'starter',
+        title: 'Démarrer l\'expérience',
+        getContent: (disclaimer, goToNextStep: () => void): React.ReactNode => {
+            return <StarterExperience disclaimer={disclaimer} goToNextStep={goToNextStep} />;
+        }
+    },
+    {
         type: 'experience',
         title: 'Expérience',
-        getContent: (experienceComponent: React.ReactNode, goToInformation: () => void): React.ReactNode => {
-            return <Experience component={experienceComponent} goToInformation={goToInformation} />;
+        getContent: (experienceComponent: React.ReactNode, goToNextStep: () => void): React.ReactNode => {
+            return <Experience component={experienceComponent} goToNextStep={goToNextStep} />;
         }
     },
     {
@@ -51,16 +58,19 @@ const steps: Step[] = [
 const Sickness: React.FC = () => {
     const [current, setCurrent] = useState(0);
     const onChange = (value: number) => setCurrent(value);
-    const goToInformation = () => onChange(1);
+    const goToNext = () => onChange(current + 1);
     const { name } = useParams();
     if (!name) return <NotFound />;
 
-    const { experienceComponent, informations, stories } = useExperience(name);
+    const { experienceComponent, informations, stories, disclaimer } = useExperience(name);
     
     let component: React.ReactNode;
     switch(steps[current].type) {
+        case 'starter':
+            component = steps[current].getContent(disclaimer, goToNext);
+            break;
         case 'experience':
-            component = steps[current].getContent(experienceComponent, goToInformation);
+            component = steps[current].getContent(experienceComponent, goToNext);
             break;
         case 'informations':
             component = steps[current].getContent(informations, () => {});            
