@@ -6,7 +6,7 @@ const Home: React.FC = () => {
         <p>Home works</p>
 
         <SicknessCard name='TCA' />
-        <SicknessCard name='test' />
+        <SicknessCard name='Schizophrenia' />
         <SicknessCard name='test' />
         <SicknessCard name='test' />
 

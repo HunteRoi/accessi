@@ -1,3 +1,4 @@
+import Schizophrenia from '../modules/Schizophrenia';
 import TCA from '../modules/TCA';
 
 type ModuleData = {
@@ -19,6 +20,9 @@ export default function useExperience(name: string): ModuleData {
     switch(name) {
         case 'TCA':
             component.experienceComponent = <TCA />
+            break;
+        case 'Schizophrenia':
+            component.experienceComponent = <Schizophrenia />
             break;
         default:
             throw new Error('Unknown experience');
