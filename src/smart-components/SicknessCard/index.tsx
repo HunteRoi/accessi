@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 
-export default function SicknessCard() {
+type Props = {
+    name: string
+};
+
+const SicknessCard: React.FC<Props> = ({ name }) => {
     return <div>
-        <Link to='/sickness'>Sickness card</Link>
+        <Link to={`/sickness/${name}`}>Sickness card</Link>
     </div>;
-}
+};
+
+export default SicknessCard;

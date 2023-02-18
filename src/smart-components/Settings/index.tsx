@@ -1,5 +1,7 @@
-import React from 'react';
+const Settings: React.FC = () => {
+    return <>
+        <h1>Settings works</h1>
+    </>;
+};
 
-export default function Settings() {
-    return <>Settings works</>;
-}
+export default Settings;
