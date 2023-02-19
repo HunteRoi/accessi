@@ -1,0 +1,86 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 22px;
+  color: white;
+}
+
+.parent > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  min-width: 22rem;
+}
+
+.choisirExperience {
+  flex-direction: row !important;
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #e5bb9e;
+}
+
+.choisirExperience h2 {
+  font-size: 60px;
+  padding-left: 1rem;
+}
+
+.dyslexie {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #614e44;
+}
+
+.pattern1 {
+  padding: 0 !important;
+  grid-area: 1 / 4 / 2 / 5;
+  /* background-color: #ad6d44; */
+}
+
+.schizophrenie {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #614e44;
+}
+
+.pattern2 {
+  padding: 0 !important;
+  grid-area: 2 / 2 / 3 / 3;
+  /* background-color: #ad6d44; */
+}
+
+.daltonisme {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: #e5bb9e;
+}
+
+.surdite {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: #e08c57;
+}
+
+.suggestion {
+  grid-area: 2 / 5 / 3 / 6;
+  background-color: #614e44;
+}
+
+.tca {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #ad6d44;
+}
+
+.dyscalculie {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #e5bb9e;
+}
+
+.malvoyance {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #e08c57;
+}
+
+.dysorthographie {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: #ad6d44;
+}
