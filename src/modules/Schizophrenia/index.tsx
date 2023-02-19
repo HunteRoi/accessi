@@ -37,35 +37,25 @@ const Schizophrenia: React.FC = () => {
         };
     }, []);
 
-    return <div>
-        <div>
-            <Button
-                className='start-button'
-                type="default" 
-                icon={<HeadsetIcon />}
-                onClick={startExperience}
-            >
-                Start experience
-            </Button>
-        </div>
+    return <>
+        <Button
+            className='start-button'
+            type='default'
+            icon={<HeadsetIcon />}
+            onClick={startExperience}
+        >
+            Start experience
+        </Button>
 
-       <div>
-        <Button 
-                className='switch-button'
-                type="default"
-                icon={ isSchizoPlaying ? <OffIcon /> : <OnIcon />}
-                onClick={handleSchizoSoundButton}
-            />
-       </div>
+        <Button
+            className='switch-button'
+            type='default'
+            icon={ isSchizoPlaying ? <OffIcon /> : <OnIcon />}
+            onClick={handleSchizoSoundButton}
+        />
 
-        <div>
-            <Button
-                onClick={resetAudioTracks}
-            >
-                Réinitialiser piste audio
-            </Button>
-        </div>
-    </div>
+        <Button onClick={resetAudioTracks}>Réinitialiser piste audio</Button>
+    </>
 }
 
 export default Schizophrenia;

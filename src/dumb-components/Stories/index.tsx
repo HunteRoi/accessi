@@ -1,4 +1,4 @@
-import { Avatar, List } from 'antd';
+import { List } from 'antd';
 
 import { Story } from '../../typings';
 import './style.css'
