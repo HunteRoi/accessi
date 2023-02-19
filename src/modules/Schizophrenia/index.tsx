@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Button } from 'antd';
 
 import './style.css';
@@ -29,6 +29,13 @@ const Schizophrenia: React.FC = () => {
     const startExperience = () => {
         cleanSound.current.play();
     }
+
+    useEffect(() => {
+        return () => {
+            cleanSound.current.pause();
+            schizoSound.current.pause();
+        };
+    }, []);
 
     return <div>
         <div>

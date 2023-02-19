@@ -1,7 +1,9 @@
-import { MessageOutlined } from '@ant-design/icons';
-import { Button, Modal, Input, Form, message } from 'antd';
 import { useState, ChangeEventHandler } from 'react';
+import { Button, Modal, Input, Form, message } from 'antd';
+import { MessageOutlined } from '@ant-design/icons';
 const { TextArea } = Input;
+
+import './style.css';
 
 const initialValue = { name: '', content: '' };
 
@@ -41,7 +43,7 @@ const FeedbackModal: React.FC = () => {
 
     return <>
         {contextHolder}
-        <Button type='primary' shape='circle' icon={<MessageOutlined />} size='large' onClick={showModal}/>
+        <Button className='feedback-button' type='primary' shape='circle' icon={<MessageOutlined />} size='large' onClick={showModal}/>
         <Modal title='Ajouter un feedback' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
             <Form>
                 <Input placeholder='Votre nom' value={feedback.name} onChange={handleNameChange} />

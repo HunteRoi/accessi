@@ -29,7 +29,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fee2a0;
-  margin: 20px;
+  text-align: center;
+  padding: 50px;
 }
 
 body * {

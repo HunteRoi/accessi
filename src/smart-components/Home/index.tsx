@@ -17,7 +17,8 @@ import {
     SchizophrenieIcon,
     SuggestionIcon,
     SurditeIcon,
-    TCAIcon
+    TCAIcon,
+    SettingIcon
 } from './customIcons';
 
 const Home: React.FC = () => {
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
 
     const showModal = () => setIsModalOpen(true);
     const handleOk = () => setIsModalOpen(false);
+    const handleCancel = () => setIsModalOpen(false);
 
     return <>
         <div className='parent'>
@@ -42,13 +44,15 @@ const Home: React.FC = () => {
             <SicknessCard className='dysorthographie'                    label='Dysorthographie'         icon={<DysorthographieIcon />} />
         </div> 
         
-
-        <SettingOutlined onClick={showModal}/>
+        <a onClick={showModal} className='settings'>
+            <SettingIcon />
+        </a>
 
         <Modal
             title='Paramètres'
             open={isModalOpen}
             onOk={handleOk}
+            onCancel={handleCancel}
             footer={[
                 <Button key='ok' type='primary' onClick={handleOk}>OK</Button>
             ]}

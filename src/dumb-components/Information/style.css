@@ -1,0 +1,15 @@
+.information {
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    align-items:center;
+    justify-content:center;
+}
+
+.informationSummary{
+    margin: 10px;
+}

@@ -1,5 +1,5 @@
-import { Button } from 'antd';
 import { PlayCircleOutlined } from '@ant-design/icons';
+import ChangeStepButton from '../ChangeStepButton';
 
 type Props = {
     disclaimer: string,
@@ -8,14 +8,10 @@ type Props = {
 
 const Experience: React.FC<Props> = ({ disclaimer, goToNextStep }) => (
     <>
-        <Button
-            type='primary'
-            shape='circle'
-            icon={<PlayCircleOutlined />}
-            size='large'
-            onClick={goToNextStep}
+        <ChangeStepButton 
+            changeStep={goToNextStep} 
+            icon={<PlayCircleOutlined/>}
         />
-
         <p>{disclaimer}</p>
     </>
 );
