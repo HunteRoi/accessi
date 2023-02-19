@@ -58,7 +58,7 @@ export default function useExperience(disabilityName: string): ModuleData {
         case 'dyslexie':
             component.experienceComponent = <Dyslexia />;
             break;
-        case 'schizophrenia':
+        case 'schizophrénie':
             component.experienceComponent = <Schizophrenia />
             break;
         default:
