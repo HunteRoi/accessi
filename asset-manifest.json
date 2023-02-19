@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/inside-out/static/css/main.d03c02a8.css",
-    "main.js": "/inside-out/static/js/main.ac655fe3.js",
+    "main.js": "/inside-out/static/js/main.5aadc441.js",
     "static/js/787.8d1dd590.chunk.js": "/inside-out/static/js/787.8d1dd590.chunk.js",
     "static/media/sounds_schizo.mp3": "/inside-out/static/media/sounds_schizo.807f5d997f58c7085eee.mp3",
     "static/media/soundclean_schizo.mp3": "/inside-out/static/media/soundclean_schizo.c1d9221b92f061adc920.mp3",
@@ -30,11 +30,11 @@
     "static/media/logo.svg": "/inside-out/static/media/logo.7ba1b6b03a878a0a40d29df9593e514f.svg",
     "index.html": "/inside-out/index.html",
     "main.d03c02a8.css.map": "/inside-out/static/css/main.d03c02a8.css.map",
-    "main.ac655fe3.js.map": "/inside-out/static/js/main.ac655fe3.js.map",
+    "main.5aadc441.js.map": "/inside-out/static/js/main.5aadc441.js.map",
     "787.8d1dd590.chunk.js.map": "/inside-out/static/js/787.8d1dd590.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d03c02a8.css",
-    "static/js/main.ac655fe3.js"
+    "static/js/main.5aadc441.js"
   ]
 }
