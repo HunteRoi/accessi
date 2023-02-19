@@ -9,3 +9,25 @@
     transition-delay: 0s;
     transition-property: all;
 }
+
+div{
+    margin: auto;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+.stepper{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    text-align: initial;
+}
+.backToMenu{
+    position: relative;
+}

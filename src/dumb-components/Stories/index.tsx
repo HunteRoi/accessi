@@ -6,7 +6,7 @@ type Props = {
 };
 const Stories: React.FC<Props> = ({stories}) => {
     return <>
-        <h1>Témoignage</h1>
+        <h2>Témoignage</h2>
         <List
             itemLayout='horizontal'
             dataSource={stories}

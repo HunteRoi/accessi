@@ -87,11 +87,18 @@ const Sickness: React.FC = () => {
     const items: StepProps[] = steps.map(s => ({ title: s.title }));
 
     return (
-        <div>
-
+        <>
+            <h1>{ name }</h1>
+            <Button 
+                className='backToHome'
+                type='primary' 
+                shape='circle' 
+                icon={<ArrowLeftOutlined />} 
+                onClick={() => navigate('/')}
+            />
             { component }
-            { name }
             <Steps
+                className='stepper'
                 type='inline'
                 progressDot={StepperDot}
                 current={current}
@@ -99,13 +106,7 @@ const Sickness: React.FC = () => {
                 onChange={onChange}
             />
             <FeedbackModal />
-            <Button 
-                type='primary' 
-                shape='circle' 
-                icon={<ArrowLeftOutlined />} 
-                onClick={() => navigate('/')}
-            />
-        </div>
+        </>
     );
 };
 
