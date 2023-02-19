@@ -10,8 +10,8 @@ const Experience: React.FC<Props> = ({ component, goToNextStep }) => {
     return <>
         <h2>Experience</h2>
         <ChangeStepButton 
-            changeStep={goToNextStep} 
-            icon={<InfoCircleOutlined/>}
+            changeStep={goToNextStep}
+            label='En savoir plus'
         />
         {component}
     </>;

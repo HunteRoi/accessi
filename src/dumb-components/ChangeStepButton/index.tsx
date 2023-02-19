@@ -1,20 +1,21 @@
 import { Button } from 'antd';
+import './style.css';
 
 type Props = {
-    changeStep: () => void
-    icon: React.ReactNode
+    changeStep: () => void;
+    label?:string;
 };
 
-const ChangeStepButton: React.FC<Props> = ({ changeStep, icon }) => (
-    <>
-        <Button
-            type='primary'
-            shape='circle'
-            icon={icon}
-            size='large'
-            onClick={changeStep}
-        />
-    </>
+const ChangeStepButton: React.FC<Props> = ({ changeStep, label }) => (
+    <Button
+        type='primary'
+        shape='default'
+        size='large'
+        onClick={changeStep}
+        className='change-step'
+    >
+        {label}
+    </Button>
 );
 
 export default ChangeStepButton;

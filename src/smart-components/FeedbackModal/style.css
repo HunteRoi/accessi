@@ -9,4 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E08C57;
+}
+
+.feedback-button:hover {
+    background-color: #AD6D44 !important;
 }

@@ -9,8 +9,8 @@ type Props = {
 const Experience: React.FC<Props> = ({ disclaimer, goToNextStep }) => (
     <>
         <ChangeStepButton 
-            changeStep={goToNextStep} 
-            icon={<PlayCircleOutlined/>}
+            changeStep={goToNextStep}
+            label="Débuter l'expérience"
         />
         <p>{disclaimer}</p>
     </>

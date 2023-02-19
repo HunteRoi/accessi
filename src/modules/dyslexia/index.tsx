@@ -3,7 +3,7 @@ import useDyslexia from './useDyslexia';
 
 const Dyslexia: React.FC = () => {
     useEffect(() => {
-        const pid = useDyslexia('p, h1, h2, h3, h4, h5, h6, blockquote, cite, q');
+        const pid = useDyslexia('p, h1, h2, h3, h4, h5, h6, blockquote, cite, q, span');
         return () => clearInterval(pid);
     }, []);
 
