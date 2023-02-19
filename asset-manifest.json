@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inside-out/static/css/main.a0438ada.css",
-    "main.js": "/inside-out/static/js/main.0570fa2b.js",
+    "main.css": "/inside-out/static/css/main.826a1b35.css",
+    "main.js": "/inside-out/static/js/main.95f4eb78.js",
     "static/js/787.8d1dd590.chunk.js": "/inside-out/static/js/787.8d1dd590.chunk.js",
     "static/media/TCA_hidden.png": "/inside-out/static/media/TCA_hidden.bb8d9caabd17542ac624.png",
     "static/media/TCA_revealed.png": "/inside-out/static/media/TCA_revealed.d97a2db801362406ed05.png",
@@ -12,16 +12,28 @@
     "static/media/DIN-Regular.ttf": "/inside-out/static/media/DIN-Regular.93f8fccd22ac0821a21c.ttf",
     "static/media/OpenDyslexicAlta-Regular.otf": "/inside-out/static/media/OpenDyslexicAlta-Regular.dcb2363dd178768141a8.otf",
     "static/media/OpenDyslexicAlta-Bold.otf": "/inside-out/static/media/OpenDyslexicAlta-Bold.48a088add10b1adb8f13.otf",
+    "static/media/pattern1.svg": "/inside-out/static/media/pattern1.ca14964bc6b020a5f062cf0cecbf135e.svg",
+    "static/media/pattern2.svg": "/inside-out/static/media/pattern2.f485a2e5a36df833d81edabd95e4c3d0.svg",
+    "static/media/dyslexie.svg": "/inside-out/static/media/dyslexie.746819b53db20d56bbb71b572f9e636e.svg",
+    "static/media/dysorthographie.svg": "/inside-out/static/media/dysorthographie.567fb5e9bed13d07613a2c8643e157af.svg",
+    "static/media/dyscalculie.svg": "/inside-out/static/media/dyscalculie.d3f5ad04a8f9f36f80e7991ebba2b7f8.svg",
+    "static/media/suggestion.svg": "/inside-out/static/media/suggestion.8d3655c1c3574597ee092945ad59b51c.svg",
+    "static/media/malvoyance.svg": "/inside-out/static/media/malvoyance.0100cdee6afa392ce9a015ac2a4408d1.svg",
+    "static/media/TCA.svg": "/inside-out/static/media/TCA.6631fafb2c01b9d79da791513ad8da2e.svg",
     "static/media/headset.svg": "/inside-out/static/media/headset.45bd49d41d6b334548c4ac5178486bd6.svg",
+    "static/media/schizophrenie.svg": "/inside-out/static/media/schizophrenie.760ddf83c3a4b56a59370e959151b6ea.svg",
+    "static/media/daltonisme.svg": "/inside-out/static/media/daltonisme.671de900f331045488c85c0a21164244.svg",
+    "static/media/surdite.svg": "/inside-out/static/media/surdite.264463624c5fc7f78484b099294067b5.svg",
     "static/media/off-icon.svg": "/inside-out/static/media/off-icon.e882317dfbf9004501e850f89701e38d.svg",
     "static/media/on-icon.svg": "/inside-out/static/media/on-icon.32f191a3412b15fac7ee73ef415811c3.svg",
+    "static/media/logo.svg": "/inside-out/static/media/logo.7ba1b6b03a878a0a40d29df9593e514f.svg",
     "index.html": "/inside-out/index.html",
-    "main.a0438ada.css.map": "/inside-out/static/css/main.a0438ada.css.map",
-    "main.0570fa2b.js.map": "/inside-out/static/js/main.0570fa2b.js.map",
+    "main.826a1b35.css.map": "/inside-out/static/css/main.826a1b35.css.map",
+    "main.95f4eb78.js.map": "/inside-out/static/js/main.95f4eb78.js.map",
     "787.8d1dd590.chunk.js.map": "/inside-out/static/js/787.8d1dd590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0438ada.css",
-    "static/js/main.0570fa2b.js"
+    "static/css/main.826a1b35.css",
+    "static/js/main.95f4eb78.js"
   ]
 }
