@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/inside-out/static/css/main.826a1b35.css",
-    "main.js": "/inside-out/static/js/main.95f4eb78.js",
+    "main.css": "/inside-out/static/css/main.d03c02a8.css",
+    "main.js": "/inside-out/static/js/main.ac655fe3.js",
     "static/js/787.8d1dd590.chunk.js": "/inside-out/static/js/787.8d1dd590.chunk.js",
-    "static/media/TCA_hidden.png": "/inside-out/static/media/TCA_hidden.bb8d9caabd17542ac624.png",
-    "static/media/TCA_revealed.png": "/inside-out/static/media/TCA_revealed.d97a2db801362406ed05.png",
     "static/media/sounds_schizo.mp3": "/inside-out/static/media/sounds_schizo.807f5d997f58c7085eee.mp3",
     "static/media/soundclean_schizo.mp3": "/inside-out/static/media/soundclean_schizo.c1d9221b92f061adc920.mp3",
+    "static/media/TCA_hidden.jpg": "/inside-out/static/media/TCA_hidden.4631d30b30e39a4d17d7.jpg",
+    "static/media/TCA_revealed.jpg": "/inside-out/static/media/TCA_revealed.fdbe9e6d358b5f4e4ac9.jpg",
     "static/media/OpenDyslexicAlta-BoldItalic.otf": "/inside-out/static/media/OpenDyslexicAlta-BoldItalic.0e5bc9617c356a42cd01.otf",
     "static/media/OpenDyslexicAlta-Italic.otf": "/inside-out/static/media/OpenDyslexicAlta-Italic.4ebe180f8ce85db1b4a3.otf",
     "static/media/DIN-Regular.ttf": "/inside-out/static/media/DIN-Regular.93f8fccd22ac0821a21c.ttf",
@@ -15,6 +15,7 @@
     "static/media/pattern1.svg": "/inside-out/static/media/pattern1.ca14964bc6b020a5f062cf0cecbf135e.svg",
     "static/media/pattern2.svg": "/inside-out/static/media/pattern2.f485a2e5a36df833d81edabd95e4c3d0.svg",
     "static/media/dyslexie.svg": "/inside-out/static/media/dyslexie.746819b53db20d56bbb71b572f9e636e.svg",
+    "static/media/settings.svg": "/inside-out/static/media/settings.72dfdd199716edd098a6d5487f325489.svg",
     "static/media/dysorthographie.svg": "/inside-out/static/media/dysorthographie.567fb5e9bed13d07613a2c8643e157af.svg",
     "static/media/dyscalculie.svg": "/inside-out/static/media/dyscalculie.d3f5ad04a8f9f36f80e7991ebba2b7f8.svg",
     "static/media/suggestion.svg": "/inside-out/static/media/suggestion.8d3655c1c3574597ee092945ad59b51c.svg",
@@ -28,12 +29,12 @@
     "static/media/on-icon.svg": "/inside-out/static/media/on-icon.32f191a3412b15fac7ee73ef415811c3.svg",
     "static/media/logo.svg": "/inside-out/static/media/logo.7ba1b6b03a878a0a40d29df9593e514f.svg",
     "index.html": "/inside-out/index.html",
-    "main.826a1b35.css.map": "/inside-out/static/css/main.826a1b35.css.map",
-    "main.95f4eb78.js.map": "/inside-out/static/js/main.95f4eb78.js.map",
+    "main.d03c02a8.css.map": "/inside-out/static/css/main.d03c02a8.css.map",
+    "main.ac655fe3.js.map": "/inside-out/static/js/main.ac655fe3.js.map",
     "787.8d1dd590.chunk.js.map": "/inside-out/static/js/787.8d1dd590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.826a1b35.css",
-    "static/js/main.95f4eb78.js"
+    "static/css/main.d03c02a8.css",
+    "static/js/main.ac655fe3.js"
   ]
 }
