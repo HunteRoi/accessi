@@ -1,4 +1,3 @@
-import { InfoCircleOutlined } from '@ant-design/icons';
 import ChangeStepButton from '../ChangeStepButton';
 
 type Props = {
