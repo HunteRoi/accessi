@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Icon from '@ant-design/icons';
 
 import './style.css';
 

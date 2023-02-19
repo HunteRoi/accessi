@@ -14,7 +14,7 @@
   font-size: 30px;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  min-width: 22rem;
 }
 
 .choisirExperience {
@@ -36,7 +36,7 @@
 .pattern1 {
   padding: 0 !important;
   grid-area: 1 / 4 / 2 / 5;
-  background-color: #ad6d44;
+  /* background-color: #ad6d44; */
 }
 
 .schizophrenie {
@@ -47,7 +47,7 @@
 .pattern2 {
   padding: 0 !important;
   grid-area: 2 / 2 / 3 / 3;
-  background-color: #ad6d44;
+  /* background-color: #ad6d44; */
 }
 
 .daltonisme {
