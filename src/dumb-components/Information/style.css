@@ -1,18 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+
 .information {
     border: 1px solid white;
     border-radius: 30px;
     background-color: white;
-    display: flex;
-    flex-direction: row;
     margin: 20px;
     padding: 20px;
-    align-items: center;
-    justify-content: center;
     text-align: justify;
     font-size: large;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.information-content {
+    text-align: justify;
+    font-size: large;
+    align-self: center;
 }
 
 .infoSummary {
+    position: relative;
+    top: 1%;
+    right: 1%;
     margin: 1.5rem;
     background-color: lightgray;
 }

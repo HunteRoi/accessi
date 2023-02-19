@@ -18,8 +18,11 @@ export default function useExperience(disabilityName: string): ModuleData {
         name: disabilityName,
         experienceComponent: <></>,
         informations: {
+            title: '',
             description : '',
-            summaries: []
+            summaries: [],
+            subParts: [],
+            bulletList: []
         },
         stories: []
     };
@@ -29,59 +32,71 @@ export default function useExperience(disabilityName: string): ModuleData {
             component.experienceComponent = <TCA />;
             component.disclaimer = 'Ca pèse lourd...';
             component.informations = {
+                title: 'Troubles du comportement alimentaire',
                 description: `Un trouble du comportement alimentaire (TCA) est une pratique alimentaire «
-                    anormale »
-                    associée à une grande souffrance psychique, qui s'installe durablement et dont les
-                    conséquences pour la santé de l'individu peuvent être graves. Dans ce type de maladie
-                    mentale, les attitudes face à son corps, à son poids et à la nourriture sont perturbées.
-                    Le fonctionnement psychosocial et la qualité de vie y sont également très altérés.
-                    Il existe quatre types de troubles alimentaires médicalement définis : l'anorexie
-                    mentale, la boulimie mentale, l'hyperphagie boulimique (aussi appelée frénésie
-                    alimentaire) et les troubles alimentaires non spécifiés
-                    > L'anorexie mentale
-                    Il s'agit d'une restriction alimentaire visant une perte de poids significative. L'anorexie
-                    mentale se caractérise par une peur intense de devenir gros, malgré une maigreur
-                    apparente et un poids en dessous de la normale (établi à partir de l'IMC). On retrouve
-                    aussi des conduites interférant avec la prise de poids, alors que celui-ci est
-                    significativement bas.
-                    > La boulimie
-                    La crise boulimique correspond à l'ingestion d'un volume alimentaire largement
-                    supérieur à la normale en un temps limité, de moins de 2 heures en général, de
-                    manière compulsive ou ritualisée. La survenue de ces crises est associée à des
-                    sentiments de honte, de culpabilité et de perte de contrôle.
-                    > L'hyperphagie boulimique
-                    L'hyperphagie boulimique, ou accès d'hyperphagie, se présente sous la forme
-                    de crises de boulimie incontrôlées et récurrentes, sans comportements
-                    compensatoires. Généralement, une certaine restriction est observable, ce qui renforce
-                    les pulsions alimentaires. L'absence de comportements compensatoires est ce qui
-                    différencie l'hyperphagie de la boulimie.
-                    > Le trouble des conduites alimentaires non spécifié
-                    Le trouble des conduites alimentaires non spécifié est un diagnostic du DSM-5 utilisé
-                    pour qualifier toutes les problématiques qui ne répondent pas précisément aux critères
-                    txt hackaton 8
-                    des troubles du comportement alimentaire spécifiques, tels que l'anorexie mentale, la
-                    boulimie et l'accès hyperphagique. Les médecins peuvent l'utiliser par exemple
-                    lorsqu'ils ne disposent pas de toutes les informations nécessaires pour évoquer un
-                    diagnostic précis de TCA.
-                    > Le mérycisme
-                    Il s'agit d'une régurgitation ou d'une re-mastication des aliments qui peut durer des
-                    heures. Ceux-ci sont à nouveau mastiqués, ruminés, puis généralement ravalés, en
-                    l'absence de nausées ou de sentiment de dégoût. Cette pratique, qui « remplace »
-                    l'alimentation adaptée, a pour objectif de tromper la frustration de faim, et survient après
-                    un repas.
-                    > L'hyperphagie nocturne
-                    Il s'agit d'une prise alimentaire non contrôlée, excessive, pendant la nuit. L'individu
-                    se réveille pour aller manger copieusement. Il va ainsi manger rapidement, de manière
-                    compulsive, sans être capable de refréner cette envie.
-                    > Le pica
-                    Ce trouble repose sur l'ingestion répétée de substances dont les qualités nutritives
-                    sont nulles, mais aussi non comestibles (papier, éponges, savon, peinture, métal,
-                    argile, etc.). Le type et la nature des substances varie en fonction de l'âge. Cette
-                    conduite doit être répétée dans le temps et jugée grave et ne correspond pas « à une
-                    pratique culturellement ou socialement admise ». Il est plus fréquent chez les enfants
-                    ayant un handicap intellectuel sévère.`,
-                summaries: [
-
+                anormale » associée à une grande souffrance psychique, qui s'installe durablement et dont les
+                conséquences pour la santé de l'individu peuvent être graves. Dans ce type de maladie
+                mentale, les attitudes face à son corps, à son poids et à la nourriture sont perturbées.
+                Le fonctionnement psychosocial et la qualité de vie y sont également très altérés.
+                Il existe quatre types de troubles alimentaires médicalement définis : l'anorexie
+                mentale, la boulimie mentale, l'hyperphagie boulimique (aussi appelée frénésie
+                alimentaire) et les troubles alimentaires non spécifiés.`,
+                subParts: [
+                    {
+                        title: 'L\'anorexie mentale',
+                        description: `Il s'agit d'une restriction alimentaire visant une perte de poids significative. L'anorexie
+                            mentale se caractérise par une peur intense de devenir gros, malgré une maigreur
+                            apparente et un poids en dessous de la normale (établi à partir de l'IMC). On retrouve
+                            aussi des conduites interférant avec la prise de poids, alors que celui-ci est
+                            significativement bas.`
+                    },
+                    {
+                        title: 'La boulimie',
+                        description: `La crise boulimique correspond à l'ingestion d'un volume alimentaire largement
+                        supérieur à la normale en un temps limité, de moins de 2 heures en général, de
+                        manière compulsive ou ritualisée. La survenue de ces crises est associée à des
+                        sentiments de honte, de culpabilité et de perte de contrôle.`
+                    },
+                    {
+                        title: 'L\'hyperphagie boulimique',
+                        description: `L'hyperphagie boulimique, ou accès d'hyperphagie, se présente sous la forme
+                        de crises de boulimie incontrôlées et récurrentes, sans comportements
+                        compensatoires. Généralement, une certaine restriction est observable, ce qui renforce
+                        les pulsions alimentaires. L'absence de comportements compensatoires est ce qui
+                        différencie l'hyperphagie de la boulimie.`
+                    },
+                    {
+                        title: 'Le trouble des conduites alimentaires non spécifié',
+                        description: `Le trouble des conduites alimentaires non spécifié est un diagnostic du DSM-5 utilisé
+                        pour qualifier toutes les problématiques qui ne répondent pas précisément aux critères
+                        des troubles du comportement alimentaire spécifiques, tels que l'anorexie mentale, la
+                        boulimie et l'accès hyperphagique. Les médecins peuvent l'utiliser par exemple
+                        lorsqu'ils ne disposent pas de toutes les informations nécessaires pour évoquer un
+                        diagnostic précis de TCA.`
+                    },
+                    {
+                        title: 'Le mérycisme',
+                        description: `Il s'agit d'une régurgitation ou d'une re-mastication des aliments qui peut durer des
+                        heures. Ceux-ci sont à nouveau mastiqués, ruminés, puis généralement ravalés, en
+                        l'absence de nausées ou de sentiment de dégoût. Cette pratique, qui « remplace »
+                        l'alimentation adaptée, a pour objectif de tromper la frustration de faim, et survient après
+                        un repas.`
+                    },
+                    {
+                        title: 'L\'hyperphagie nocturne',
+                        description: `Il s'agit d'une prise alimentaire non contrôlée, excessive, pendant la nuit. L'individu
+                        se réveille pour aller manger copieusement. Il va ainsi manger rapidement, de manière
+                        compulsive, sans être capable de refréner cette envie.`
+                    },
+                    {
+                        title: 'Le pica',
+                        description: `Ce trouble repose sur l'ingestion répétée de substances dont les qualités nutritives
+                        sont nulles, mais aussi non comestibles (papier, éponges, savon, peinture, métal,
+                        argile, etc.). Le type et la nature des substances varie en fonction de l'âge. Cette
+                        conduite doit être répétée dans le temps et jugée grave et ne correspond pas « à une
+                        pratique culturellement ou socialement admise ». Il est plus fréquent chez les enfants
+                        ayant un handicap intellectuel sévère.`
+                    }
                 ]
             };
             component.stories = [
@@ -117,6 +132,7 @@ export default function useExperience(disabilityName: string): ModuleData {
             component.experienceComponent = <Dyslexia />;
             component.disclaimer = 'Les lettres dansent la salsa!';
             component.informations = {
+                title: 'Dyslexie',
                 description: `La dyslexie est un trouble d'apprentissage d'origine neurologique, et plusieurs
                     études suggèrent qu'elle est héréditaire. Les enfants présentant une dyslexie ont de la
                     difficulté à décoder les mots écrits. Certaines mesures peuvent être mises en place
@@ -159,28 +175,40 @@ export default function useExperience(disabilityName: string): ModuleData {
             component.experienceComponent = <Schizophrenia />
             component.disclaimer = 'Pour une meilleure expérience, pensez à utiliser un casque audio !';
             component.informations = {
+                title: 'Schizophrénie',
                 description: `La schizophrénie est un trouble psychotique chronique qui peut affecter la
                 compréhension du monde de la personne atteinte et sa façon d'interagir avec les
-                autres
-                La schizophrénie est une maladie du cerveau qui affecte la pensée, les sentiments et
-                les émotions, tout comme les perceptions et les comportements des personnes qui en
-                sont atteintes. Toutes ces fonctions ne sont cependant pas perturbées au même
-                moment et dans la même mesure. De nombreuses personnes souffrant de
-                schizophrénie peuvent avoir un comportement parfaitement normal pendant de longues
-                périodes. Quelques symptômes :
-                \n→ Éprouver des difficultés à établir un contact avec son entourage,
-                \n→ Être envahie par des idées et des impressions étranges,
-                \n→ Avoir l'impression d'entendre des voix qui, bien que n'existant pas réellement, font partie de sa réalité,
-                \n→ Être prisonnière de ses hallucinations et de son délire,
-                \n→ Avoir une perception de soi partiellement, voire totalement altérée,
-                \n→ Avoir beaucoup de difficultés à distinguer ce qui est réel de ce qui ne l'est pas,
-                \n→ Avoir la conviction que certaines personnes lui veulent du mal,
-                \n→ Se replier sur elle-même et se comporter d'une façon bizarre ou imprévisible,
-                \n→ Se désintéresser de nombreuses choses : habillement, ménage, hygiène corporelle,
-                \n→ Avoir des réactions émotionnelles étranges et incongrues,
-                \n→ Percevoir son entourage comme hostile,
-                \n→ Ressentir une insécurité permanente`,
-                summaries: []
+                autres.`,
+                subParts: [
+                    {
+                        title: 'En détails',
+                        description:`La schizophrénie est une maladie du cerveau qui affecte la pensée, les sentiments et
+                        les émotions, tout comme les perceptions et les comportements des personnes qui en
+                        sont atteintes. Toutes ces fonctions ne sont cependant pas perturbées au même
+                        moment et dans la même mesure. De nombreuses personnes souffrant de
+                        schizophrénie peuvent avoir un comportement parfaitement normal pendant de longues
+                        périodes.
+                        `
+                    },
+                    {
+                        title: 'Les symptômes',
+                        description: 'L\'ensemble des symptômes sont :',
+                        bulletList: [
+                            'Éprouver des difficultés à établir un contact avec son entourage',
+                            'Être envahie par des idées et des impressions étranges',
+                            'Avoir l\'impression d\'entendre des voix qui, bien que n\'existant pas réellement, font partie de sa réalité',
+                            'Être prisonnière de ses hallucinations et de son délire',
+                            'Avoir une perception de soi partiellement, voire totalement altérée',
+                            'Avoir beaucoup de difficultés à distinguer ce qui est réel de ce qui ne l\'est pas',
+                            'Avoir la conviction que certaines personnes lui veulent du mal',
+                            'Se replier sur elle-même et se comporter d\'une façon bizarre ou imprévisible',
+                            'Se désintéresser de nombreuses choses : habillement, ménage, hygiène corporelle',
+                            'Avoir des réactions émotionnelles étranges et incongrues',
+                            'Percevoir son entourage comme hostile',
+                            'Ressentir une insécurité permanente'
+                        ],
+                    },
+                ]
             };
             component.stories = [
                 {

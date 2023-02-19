@@ -6,6 +6,9 @@ export type Story = {
 };
 
 export type InfoMetadata = {
+    title: string,
     description: string,
-    summaries: string[]
+    summaries?: string[]
+    bulletList?: string[],
+    subParts?: InfoMetadata[]
 };
