@@ -17,7 +17,8 @@ import {
     SchizophrenieIcon,
     SuggestionIcon,
     SurditeIcon,
-    TCAIcon
+    TCAIcon,
+    SettingIcon
 } from './customIcons';
 
 const Home: React.FC = () => {
@@ -43,8 +44,9 @@ const Home: React.FC = () => {
             <SicknessCard className='dysorthographie'                    label='Dysorthographie'         icon={<DysorthographieIcon />} />
         </div> 
         
-
-        <SettingOutlined onClick={showModal}/>
+        <a onClick={showModal} className='settings'>
+            <SettingIcon />
+        </a>
 
         <Modal
             title='Paramètres'
