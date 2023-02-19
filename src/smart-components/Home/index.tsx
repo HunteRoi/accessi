@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Button, Modal } from 'antd';
-import { SettingOutlined } from '@ant-design/icons';
 
 import './style.css';
 import SicknessCard from '../SicknessCard';

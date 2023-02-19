@@ -1,5 +1,4 @@
 import { Button } from 'antd';
-import { PlayCircleOutlined } from '@ant-design/icons';
 
 type Props = {
     changeStep: () => void
