@@ -44,7 +44,7 @@ const steps: Step[] = [
         type: 'informations',
         title: 'Informations',
         getContent: (infoMetadata: InfoMetadata): React.ReactNode => (
-            <Information description={infoMetadata.description} summary={infoMetadata.summary} />
+            <Information description={infoMetadata.description} summaries={infoMetadata.summaries} />
         )
     },
     {
@@ -76,7 +76,7 @@ const Sickness: React.FC = () => {
             component = steps[current].getContent(experienceComponent, goToNext);
             break;
         case 'informations':
-            component = steps[current].getContent(informations, () => {});            
+            component = steps[current].getContent(informations, () => {});
             break;
         case 'stories':
             component = steps[current].getContent(stories, () => {});
@@ -89,11 +89,11 @@ const Sickness: React.FC = () => {
     return (
         <>
             <h1>{ name }</h1>
-            <Button 
+            <Button
                 className='backToHome'
-                type='primary' 
-                shape='circle' 
-                icon={<ArrowLeftOutlined />} 
+                type='primary'
+                shape='circle'
+                icon={<ArrowLeftOutlined />}
                 onClick={() => navigate('/')}
             />
             { component }
