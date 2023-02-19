@@ -16,11 +16,9 @@ const Information: React.FC <Props>  = ({ description, summaries, goToNextStep }
         />
         <div className='information'>
             <p>{description}</p>
-            <Card title='En résumé' className='infoSummary'>
-                <ul>
-                    { summaries.map((summary, index) => (<li key={index}>{summary}</li>)) }
-                </ul>
-            </Card>
+            {summaries && summaries.length > 0 && <Card title='En résumé' className='infoSummary'>
+                { summaries.map((summary, index) => (<p key={index}>{summary}</p>)) }
+            </Card>}
         </div>
     </div>
 );

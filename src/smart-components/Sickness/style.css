@@ -20,7 +20,7 @@ h1 {
     padding-bottom: 30px;
 }
 
-.stepper{
+.stepper {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -47,4 +47,8 @@ h1 {
 
 .backToHome:hover {
     background-color: #AD6D44 !important;
+}
+
+.container-sickness {
+    text-align: center;
 }

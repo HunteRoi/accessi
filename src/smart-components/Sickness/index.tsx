@@ -16,6 +16,11 @@ import NotFound from '../../dumb-components/NotFound';
 import FeedbackModal from '../FeedbackModal';
 import { InfoMetadata, Story } from '../../typings';
 
+function toCapitalize(str: string): string {
+    if(str === 'tca') return 'TCA';
+
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
 
 type Step = {
     type: 'experience' | 'informations' | 'stories' | 'starter';
@@ -76,7 +81,7 @@ const Sickness: React.FC = () => {
             component = steps[current].getContent(experienceComponent, goToNext);
             break;
         case 'informations':
-            component = steps[current].getContent(informations, goToNext);            
+            component = steps[current].getContent(informations, goToNext);
             break;
         case 'stories':
             component = steps[current].getContent(stories, () => {});
@@ -87,8 +92,8 @@ const Sickness: React.FC = () => {
     const items: StepProps[] = steps.map(s => ({ title: s.title }));
 
     return (
-        <>
-            <h1>{ name }</h1>
+        <div className='container-sickness'>
+            <h1>{ toCapitalize(name) }</h1>
             <Button
                 className='backToHome'
                 type='primary'
@@ -105,8 +110,8 @@ const Sickness: React.FC = () => {
                 items={items}
                 onChange={onChange}
             />
-            <FeedbackModal />
-        </>
+            <FeedbackModal name='feedback' withFloatingButton />
+        </div>
     );
 };
 

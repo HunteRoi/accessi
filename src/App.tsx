@@ -4,7 +4,6 @@ import { Outlet, RouterProvider } from 'react-router';
 import 'antd/dist/reset.css';
 
 import Home from './smart-components/Home';
-import Contact from './smart-components/Contact';
 import Sickness from './smart-components/Sickness';
 import Layout from './dumb-components/Layout';
 import NotFound from './dumb-components/NotFound';
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
-      { path: '/contact', element: <Contact /> },
       {
         path: '/sickness',
         element: <Outlet />,

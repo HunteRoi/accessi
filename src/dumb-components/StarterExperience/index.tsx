@@ -6,13 +6,13 @@ type Props = {
 };
 
 const Experience: React.FC<Props> = ({ disclaimer, goToNextStep }) => (
-    <>
-        <ChangeStepButton 
+    <div>
+        <ChangeStepButton
             changeStep={goToNextStep}
             label="Débuter l'expérience"
         />
         <p>{disclaimer}</p>
-    </>
+    </div>
 );
 
 export default Experience;

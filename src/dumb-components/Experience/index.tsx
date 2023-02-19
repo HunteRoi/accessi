@@ -7,7 +7,7 @@ type Props = {
 
 const Experience: React.FC<Props> = ({ component, goToNextStep }) => {
     return <>
-        <h2>Experience</h2>
+        <h2>Expérience</h2>
         <ChangeStepButton 
             changeStep={goToNextStep}
             label='En savoir plus'

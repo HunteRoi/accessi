@@ -29,8 +29,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fee2a0;
-  text-align: center;
   padding: 50px;
+  color: #614e44;
 }
 
 body * {

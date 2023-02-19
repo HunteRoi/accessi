@@ -87,6 +87,7 @@ export default function useExperience(disabilityName: string): ModuleData {
             component.stories = [
                 {
                     type: disabilityName,
+                    color:'#613d26',
                     content: `Bac en poche et une fois arrivée en classes préparatoires, j'ai pris une pilule
                     pour limiter mon acné qui m'a fait prendre du poids. J'ai été affolée par cette prise de
                     poids qui me renvoyait à mes moments traumatisants du collège. J'ai replongé dans
@@ -102,13 +103,14 @@ export default function useExperience(disabilityName: string): ModuleData {
                 },
                 {
                     type: disabilityName,
+                    color:'#e08c57',
                     content: `L'hyperphagie et alimentation troublée (14 ans à 18 ans) - Le début de mes troubles
                     remonte à ma classe de troisième, à ce moment-là en plein dans la puberté, j'avais un
                     très léger surpoids. Malgré le caractère très léger de ce surpoids, mes camarades
                     n'ont pas manqué de me répéter jour après jour que j'étais « trop grosse ». Les
                     moqueries répétées ont fait que je me suis réfugiée dans la nourriture et que j'ai
                     développé de l'hyperphagie.`
-                }
+                },
             ];
             break;
         case 'dyslexie':
@@ -127,6 +129,7 @@ export default function useExperience(disabilityName: string): ModuleData {
                 {
                     type: disabilityName,
                     name: 'Timothée',
+                    color:'#ad6d44',
                     content: `Je m'appelle Timothée et j'ai 23 ans. J'ai grandi dans une famille de dyslexiques : ma
                     soeur et mon frère sont dyslexiques et comme je suis le dernier, mes parents étaient
                     sensibilisés sur le sujet. Le diagnostic a été tardif, en 5e je crois, grâce à mon
@@ -138,6 +141,7 @@ export default function useExperience(disabilityName: string): ModuleData {
                 {
                     type: disabilityName,
                     name: 'Zaïa',
+                    color:'#e08c57',
                     content: `A 26 ans, je ne savais ni lire ni écrire. J'étais terrifiée à l'idée que les gens le
                     découvrent. J'ignorais souffrir de dyslexie, une difficulté à associer des sons à des
                     lettres, qui perturbe l'apprentissage de la lecture et de l'écriture. J'ai grandi en me
@@ -163,26 +167,26 @@ export default function useExperience(disabilityName: string): ModuleData {
                 sont atteintes. Toutes ces fonctions ne sont cependant pas perturbées au même
                 moment et dans la même mesure. De nombreuses personnes souffrant de
                 schizophrénie peuvent avoir un comportement parfaitement normal pendant de longues
-                périodes.`,
-                summaries: [
-                    'Éprouver des difficultés à établir un contact avec son entourage',
-                    'Être envahie par des idées et des impressions étranges',
-                    'Avoir l\'impression d\'entendre des voix qui, bien que n\'existant pas réellement, font partie de sa réalité',
-                    'Être prisonnière de ses hallucinations et de son délire',
-                    'Avoir une perception de soi partiellement, voire totalement altérée',
-                    'Avoir beaucoup de difficultés à distinguer ce qui est réel de ce qui ne l\'est pas',
-                    'Avoir la conviction que certaines personnes lui veulent du mal',
-                    'Se replier sur elle-même et se comporter d\'une façon bizarre ou imprévisible',
-                    'Se désintéresser de nombreuses choses : habillement, ménage, hygiène corporelle',
-                    'Avoir des réactions émotionnelles étranges et incongrues',
-                    'Percevoir son entourage comme hostile',
-                    'Ressentir une insécurité permanente'
-                ]
+                périodes. Quelques symptômes :
+                \n→ Éprouver des difficultés à établir un contact avec son entourage,
+                \n→ Être envahie par des idées et des impressions étranges,
+                \n→ Avoir l'impression d'entendre des voix qui, bien que n'existant pas réellement, font partie de sa réalité,
+                \n→ Être prisonnière de ses hallucinations et de son délire,
+                \n→ Avoir une perception de soi partiellement, voire totalement altérée,
+                \n→ Avoir beaucoup de difficultés à distinguer ce qui est réel de ce qui ne l'est pas,
+                \n→ Avoir la conviction que certaines personnes lui veulent du mal,
+                \n→ Se replier sur elle-même et se comporter d'une façon bizarre ou imprévisible,
+                \n→ Se désintéresser de nombreuses choses : habillement, ménage, hygiène corporelle,
+                \n→ Avoir des réactions émotionnelles étranges et incongrues,
+                \n→ Percevoir son entourage comme hostile,
+                \n→ Ressentir une insécurité permanente`,
+                summaries: []
             };
             component.stories = [
                 {
                     type: disabilityName,
                     name: 'Maman de Charles',
+                    color:'#613d26',
                     content: `Chez Charles, son trouble se manifeste par des hallucinations visuelles : parfois, il voit
                         des taches noires, des mouches et des vaisseaux spatiaux, comme des lumières dans
                         le ciel. Il peut avoir des comportements incongrus, des petites bizarreries qui font partie
@@ -198,10 +202,11 @@ export default function useExperience(disabilityName: string): ModuleData {
                         tête, mais plutôt proposer des solutions pour le rassurer. Alors je verrouille la porte, je le
                         rejoins dans sa chambre. Je lui propose d'appeler la police. Il s'apaise rapidement, et,
                         sous le choc, s'interroge tout haut : "Je suis parti en vrille ! J'ai complètement déliré". Il
-                        se rend compte de la situation, et passe à autre chose.`
+                        se rend compte de la situation, et passe à autre chose.`,
                 },
                 {
                     type: disabilityName,
+                    color:'#e08c57',
                     content: `Deux de mes camarades me comparaient à Elliot dans la série Mr. Robot. Mes
                         malaises, particulièrement visuels, étant devenus permanents, mon réflexe a été d'aller
                         voir un ophtalmologue. Mais rien d'anormal à signaler. J'étais persuadé que j'avais un

@@ -6,10 +6,11 @@ type Props = {
     isLink?: boolean,
     label?: string,
     icon: React.ReactNode,
-    className: string
+    className: string,
+    onClick?: () => void
 };
 
-const SicknessCard: React.FC<Props> = ({ isLink, label, icon, className }) => {
+const SicknessCard: React.FC<Props> = ({ isLink, label, icon, className, onClick }) => {
     if (isLink && label) {
         return (<div className={className}>
             <Link to={`/sickness/${label.toLowerCase()}`}>
@@ -20,7 +21,7 @@ const SicknessCard: React.FC<Props> = ({ isLink, label, icon, className }) => {
     }
 
     if (label) {
-        return (<div className={className}>
+        return (<div className={className + (onClick ? ' clickable' : '')} onClick={onClick}>
             {icon}
             <h2>{label}</h2>
         </div>);
