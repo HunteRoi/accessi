@@ -5,7 +5,6 @@ import './style.css';
 import { HeadsetIcon, OnIcon, OffIcon } from './customIcons';
 import CleanSound from './soundclean_schizo.mp3';
 import DiseaseSound from './sounds_schizo.mp3';
-import { ReloadOutlined } from '@ant-design/icons';
 
 const Schizophrenia: React.FC = () => {
     const cleanSound = useRef(new Audio(CleanSound));
