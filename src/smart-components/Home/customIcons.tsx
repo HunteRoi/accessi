@@ -11,7 +11,7 @@ import { ReactComponent as Pattern1Svg } from '../../img/pattern1.svg'
 import { ReactComponent as Pattern2Svg } from '../../img/pattern2.svg'
 import { ReactComponent as SchizophrenieSvg } from '../../img/schizophrenie.svg'
 import { ReactComponent as SuggestionSvg } from '../../img/suggestion.svg'
-import { ReactComponent as SurditeSvg } from '../../img/surdité.svg'
+import { ReactComponent as SurditeSvg } from '../../img/surdite.svg'
 import { ReactComponent as TCASvg } from '../../img/TCA.svg'
 
 export const DaltonismeIcon = (props: Partial<CustomIconComponentProps>) => (

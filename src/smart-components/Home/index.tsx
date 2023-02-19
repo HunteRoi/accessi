@@ -34,7 +34,7 @@ const Home: React.FC = () => {
             <SicknessCard className='schizophrenie'      isLink          label='Schizophrénie'           icon={<SchizophrenieIcon />} />
             <SicknessCard className='pattern2'                                                           icon={<Pattern2Icon />} />
             <SicknessCard className='daltonisme'                         label='Daltonisme'              icon={<DaltonismeIcon />} />
-            <SicknessCard className='surdité'                            label='Surdité'                 icon={<SurditeIcon />} />
+            <SicknessCard className='surdite'                            label='Surdité'                 icon={<SurditeIcon />} />
             <SicknessCard className='suggestion'         isLink          label='Suggestion'              icon={<SuggestionIcon />} />
             <SicknessCard className='tca'                isLink          label='TCA'                     icon={<TCAIcon />} />
             <SicknessCard className='dyscalculie'                        label='Dyscalculie'             icon={<DyscalculieIcon />} />
