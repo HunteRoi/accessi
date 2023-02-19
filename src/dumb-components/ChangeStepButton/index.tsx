@@ -7,17 +7,15 @@ type Props = {
 };
 
 const ChangeStepButton: React.FC<Props> = ({ changeStep, label }) => (
-    <>
-        <Button
-            type='primary'
-            shape='default'
-            size='large'
-            onClick={changeStep}
-            className='start-experience'
-        >
-            {label}
-        </Button>
-    </>
+    <Button
+        type='primary'
+        shape='default'
+        size='large'
+        onClick={changeStep}
+        className='change-step'
+    >
+        {label}
+    </Button>
 );
 
 export default ChangeStepButton;
