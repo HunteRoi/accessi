@@ -1,0 +1,9 @@
+.start-experience {
+    border-radius: 30px !important;
+    background-color: #E08C57;
+    margin-bottom: 15px;
+}
+
+.start-experience:hover {
+    background-color: #AD6D44 !important;
+}

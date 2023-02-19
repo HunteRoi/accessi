@@ -43,8 +43,8 @@ const steps: Step[] = [
     {
         type: 'informations',
         title: 'Informations',
-        getContent: (infoMetadata: InfoMetadata): React.ReactNode => (
-            <Information description={infoMetadata.description} summaries={infoMetadata.summaries} />
+        getContent: (infoMetadata: InfoMetadata, goToNextStep): React.ReactNode => (
+            <Information description={infoMetadata.description} summary={infoMetadata.summaries} goToNextStep={goToNextStep} />
         )
     },
     {
@@ -76,7 +76,7 @@ const Sickness: React.FC = () => {
             component = steps[current].getContent(experienceComponent, goToNext);
             break;
         case 'informations':
-            component = steps[current].getContent(informations, () => {});
+            component = steps[current].getContent(informations, goToNext);            
             break;
         case 'stories':
             component = steps[current].getContent(stories, () => {});
