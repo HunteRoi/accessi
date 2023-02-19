@@ -1,5 +1,5 @@
-import TCA_Hidden from './TCA_hidden.png';
-import TCA_Revealed from './TCA_revealed.png';
+import TCA_Hidden from './TCA_hidden.jpg';
+import TCA_Revealed from './TCA_revealed.jpg';
 import ReactCompareImage from 'react-compare-image';
 
 const TCA: React.FC = () => {

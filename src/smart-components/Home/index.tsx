@@ -25,6 +25,7 @@ const Home: React.FC = () => {
 
     const showModal = () => setIsModalOpen(true);
     const handleOk = () => setIsModalOpen(false);
+    const handleCancel = () => setIsModalOpen(false);
 
     return <>
         <div className='parent'>
@@ -49,6 +50,7 @@ const Home: React.FC = () => {
             title='Paramètres'
             open={isModalOpen}
             onOk={handleOk}
+            onCancel={handleCancel}
             footer={[
                 <Button key='ok' type='primary' onClick={handleOk}>OK</Button>
             ]}

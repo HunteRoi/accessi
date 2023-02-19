@@ -13,6 +13,11 @@ import { ReactComponent as SchizophrenieSvg } from '../../img/schizophrenie.svg'
 import { ReactComponent as SuggestionSvg } from '../../img/suggestion.svg'
 import { ReactComponent as SurditeSvg } from '../../img/surdite.svg'
 import { ReactComponent as TCASvg } from '../../img/TCA.svg'
+import { ReactComponent as SettingSvg } from '../../img/settings.svg';
+
+export const SettingIcon = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={() => <SettingSvg height='2rem' width='2rem' />} {...props} />
+);
 
 export const DaltonismeIcon = (props: Partial<CustomIconComponentProps>) => (
     <Icon component={() => <DaltonismeSvg height='10rem' width='10rem' />} {...props} />

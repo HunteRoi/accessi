@@ -10,11 +10,7 @@
     transition-property: all;
 }
 
-div{
-    margin: auto;
-}
-
-h1{
+h1 {
     padding-bottom: 30px;
 }
 
@@ -28,6 +24,15 @@ h1{
     color: white;
     text-align: initial;
 }
-.backToMenu{
-    position: relative;
+.backToHome {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

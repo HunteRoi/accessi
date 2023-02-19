@@ -1,0 +1,12 @@
+.feedback-button {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
