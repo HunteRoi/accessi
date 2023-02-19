@@ -8,7 +8,7 @@ type Props = InfoMetadata & {
 }
 
 const Information: React.FC<Props>  = ({ title, description, bulletList, subParts, summaries, goToNextStep }) => (
-    <div>
+    <div className='information-container'>
         <h2>Informations</h2>
         <ChangeStepButton
             changeStep={goToNextStep}

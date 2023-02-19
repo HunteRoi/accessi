@@ -1,3 +1,4 @@
+import './style.css';
 import ChangeStepButton from '../ChangeStepButton';
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
 };
 
 const Experience: React.FC<Props> = ({ disclaimer, goToNextStep }) => (
-    <div>
+    <div className='starter-container'>
         <ChangeStepButton
             changeStep={goToNextStep}
             label="Débuter l'expérience"

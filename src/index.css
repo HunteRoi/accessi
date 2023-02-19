@@ -44,3 +44,16 @@ body[data-font='dyslexic'] * {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+
+.ant-btn {
+  display: flex;
+  flex-direction: row;
+  gap: .2rem;
+  align-items: center;
+  justify-content: center;
+
+  align-self: inherit;
+  place-self: inherit;
+  justify-self: inherit;
+}

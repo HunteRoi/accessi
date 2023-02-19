@@ -1,15 +1,22 @@
-.start-button {
-    align-items: center;
-    width: 300px;
-    height: 50px;
+.button-color{
+    background-color: #E08C57 !important;
+}
+
+.button-color:hover {
+    background-color: #AD6D44 !important;
+}
+
+.buttons-list {
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
     justify-content: center;
 }
 
-.switch-button {
-    align-items: center;
-    width: 57px !important;
-    height: 90px;
-    justify-content: center;
-    border: none;
+.option {
+    margin: 1rem;
+    padding: .5rem;
+    min-height: 100px;
+    min-width: 250px;
 }
