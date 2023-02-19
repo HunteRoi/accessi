@@ -44,7 +44,7 @@ const steps: Step[] = [
         type: 'informations',
         title: 'Informations',
         getContent: (infoMetadata: InfoMetadata, goToNextStep): React.ReactNode => (
-            <Information description={infoMetadata.description} summary={infoMetadata.summaries} goToNextStep={goToNextStep} />
+            <Information description={infoMetadata.description} summaries={infoMetadata.summaries} goToNextStep={goToNextStep} />
         )
     },
     {
