@@ -1,8 +1,9 @@
-import { MessageOutlined } from '@ant-design/icons';
-import { Button, Modal, Input, Form, message } from 'antd';
 import { useState, ChangeEventHandler } from 'react';
-import './style.css';
+import { Button, Modal, Input, Form, message } from 'antd';
+import { MessageOutlined } from '@ant-design/icons';
 const { TextArea } = Input;
+
+import './style.css';
 
 const initialValue = { name: '', content: '' };
 
